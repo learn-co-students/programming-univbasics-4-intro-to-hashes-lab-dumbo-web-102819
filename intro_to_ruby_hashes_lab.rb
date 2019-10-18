@@ -15,20 +15,21 @@ def id_generator
 end
 
 def my_hash_creator(key, value)
-    my_hash_creator={:name=> "Grace Hopper"}
+    new_hash={key:value}
+    new_hash[key]
+
 end
 
 def read_from_hash(hash, key)
-     hash[:name]
-     
+    hash[key]
 
 end
 
 def update_counting_hash(hash, key)
-  if hash['hello']
-    hash['hello']+=1
+  if hash[key]
+    hash[key]+=1
   else
-    hash['hello']=1
+    hash[key]=1
   end
-
+    hash
 end
